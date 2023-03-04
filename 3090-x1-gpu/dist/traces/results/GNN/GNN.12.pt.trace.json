@@ -1,0 +1,1 @@
+[{"ph":"X","cat":"cuda_runtime","name":"cudaMemcpyAsync","pid":8,"tid":8,"ts":1677892474322120,"dur":307},{"ph":"X","cat":"gpu_memcpy","name":"Memcpy HtoD (Pageable -> Device)","pid":0,"tid":7,"ts":1677892474322199,"dur":279}]
