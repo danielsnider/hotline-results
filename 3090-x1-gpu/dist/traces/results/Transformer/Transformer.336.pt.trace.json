@@ -1,1 +1,1 @@
-[{"ph":"X","cat":"cpu_op","name":"aten::zeros","pid":7,"tid":7,"ts":1677893021970626,"dur":5},{"ph":"X","cat":"cpu_op","name":"aten::empty","pid":7,"tid":7,"ts":1677893021970627,"dur":2},{"ph":"X","cat":"cpu_op","name":"aten::zero_","pid":7,"tid":7,"ts":1677893021970630,"dur":1}]
+[{"ph":"X","cat":"cpu_op","name":"aten::zeros","pid":8,"tid":8,"ts":1678058059334777,"dur":4},{"ph":"X","cat":"cpu_op","name":"aten::empty","pid":8,"tid":8,"ts":1678058059334778,"dur":2}]

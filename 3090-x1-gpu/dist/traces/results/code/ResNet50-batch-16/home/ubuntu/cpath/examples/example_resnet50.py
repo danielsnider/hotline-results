@@ -31,7 +31,6 @@ else:
         batch_size = min(256 * num_gpus, 1024)
     elif '2080' in gpu_model:
         batch_size = min(96 * num_gpus, 1024)
-
 batch_size = 16
 print(f'\n\nbatch_size: {batch_size}\n')
 

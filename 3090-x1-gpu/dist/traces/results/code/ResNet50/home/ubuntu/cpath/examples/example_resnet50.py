@@ -67,6 +67,7 @@ else:
     active = 1
 max_steps = wait + warmup + active
 
+run_name = 'ResNet50'
 metadata = {
     'model': 'ResNet50',
     'dataset': 'CIFAR10',
@@ -86,7 +87,7 @@ with torch.profiler.profile(
     on_trace_ready=hotline.analyze(
         model,
         dataloader,
-        run_name='ResNet50',
+        run_name=run_name,
         test_accuracy=True,
         metadata=metadata,
     ),

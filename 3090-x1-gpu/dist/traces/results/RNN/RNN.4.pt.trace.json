@@ -1,1 +1,1 @@
-[{"ph":"X","cat":"user_annotation","name":"enumerate(DataLoader)#_MultiProcessingDataLoaderIter.__next__","pid":7,"tid":7,"ts":1677891893077549,"dur":225421},{"ph":"X","cat":"cpu_op","name":"aten::empty","pid":7,"tid":7,"ts":1677891893077551,"dur":11}]
+[{"ph":"X","cat":"user_annotation","name":"enumerate(DataLoader)#_MultiProcessingDataLoaderIter.__next__","pid":7,"tid":7,"ts":1678056027928172,"dur":216528},{"ph":"X","cat":"cpu_op","name":"aten::empty","pid":7,"tid":7,"ts":1678056027928175,"dur":36}]

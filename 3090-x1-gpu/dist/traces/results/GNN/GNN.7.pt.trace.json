@@ -1,1 +1,1 @@
-[{"ph":"X","cat":"cuda_runtime","name":"cudaStreamSynchronize","pid":8,"tid":8,"ts":1677892474321998,"dur":52}]
+[{"ph":"X","cat":"cuda_runtime","name":"cudaStreamSynchronize","pid":8,"tid":8,"ts":1678056532179832,"dur":52}]

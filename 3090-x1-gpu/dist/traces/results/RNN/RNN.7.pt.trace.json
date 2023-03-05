@@ -1,1 +1,1 @@
-[{"ph":"X","cat":"cpu_op","name":"aten::zeros","pid":7,"tid":7,"ts":1677891893435477,"dur":30},{"ph":"X","cat":"cpu_op","name":"aten::empty","pid":7,"tid":7,"ts":1677891893435485,"dur":16},{"ph":"X","cat":"cpu_op","name":"aten::zero_","pid":7,"tid":7,"ts":1677891893435505,"dur":1}]
+[{"ph":"X","cat":"cpu_op","name":"aten::zeros","pid":7,"tid":7,"ts":1678056028255233,"dur":30},{"ph":"X","cat":"cpu_op","name":"aten::empty","pid":7,"tid":7,"ts":1678056028255241,"dur":15},{"ph":"X","cat":"cpu_op","name":"aten::zero_","pid":7,"tid":7,"ts":1678056028255261,"dur":1}]

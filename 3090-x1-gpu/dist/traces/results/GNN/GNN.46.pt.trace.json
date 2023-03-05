@@ -1,1 +1,1 @@
-[{"ph":"X","cat":"cuda_runtime","name":"cudaStreamSynchronize","pid":8,"tid":8,"ts":1677892474323461,"dur":57}]
+[{"ph":"X","cat":"cpu_op","name":"aten::lift_fresh","pid":8,"tid":8,"ts":1678056532181513,"dur":0}]

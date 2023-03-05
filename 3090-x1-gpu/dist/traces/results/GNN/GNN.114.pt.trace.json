@@ -1,1 +1,1 @@
-[{"ph":"X","cat":"cpu_op","name":"aten::fill_","pid":8,"tid":8,"ts":1677892474470868,"dur":10},{"ph":"X","cat":"cuda_runtime","name":"cudaLaunchKernel","pid":8,"tid":8,"ts":1677892474470872,"dur":5},{"ph":"X","cat":"kernel","name":"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, at::detail::Array<char*, 1> >(int, at::native::FillFunctor<float>, at::detail::Array<char*, 1>)","pid":0,"tid":7,"ts":1677892474471109,"dur":2}]
+[{"ph":"X","cat":"cpu_op","name":"aten::to","pid":8,"tid":8,"ts":1678056532328946,"dur":0}]
