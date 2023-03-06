@@ -1,1 +1,1 @@
-[{"ph":"X","cat":"cpu_op","name":"aten::resize_","pid":7,"tid":7,"ts":1678057849890108,"dur":1}]
+[{"ph":"X","cat":"cpu_op","name":"aten::resize_","pid":7,"tid":7,"ts":1678128449211039,"dur":1}]

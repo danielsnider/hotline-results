@@ -32,6 +32,7 @@ else:
     elif '2080' in gpu_model:
         batch_size = min(96 * num_gpus, 1024)
 
+# batch_size = 16
 print(f'\n\nbatch_size: {batch_size}\n')
 
 last_time = datetime.datetime.now()
@@ -45,7 +46,7 @@ model.cuda()
 # cudnn.benchmark = False  # speedup with False
 
 dataset_dir = os.environ.get('HOTLINE_DATASET_DIR')
-transform = T.Compose([T.Resize(256), T.CenterCrop(224), T.ToTensor()])
+transform = T.Compose([T.Resize(256), T.CenterCrop(224), T.ToTensor()])  # this simulates an ImageNet size input
 trainset = torchvision.datasets.CIFAR10(root=dataset_dir, train=True,
                                         download=True, transform=transform)
 dataloader = torch.utils.data.DataLoader(trainset, batch_size=batch_size,
@@ -67,10 +68,11 @@ else:
     active = 1
 max_steps = wait + warmup + active
 
+# run_name = 'ResNet50-batch-16'
 run_name = 'ResNet50'
 metadata = {
     'model': 'ResNet50',
-    'dataset': 'CIFAR10',
+    'dataset': 'ImageNet',
     'batch_size': batch_size,
     'optimizer': 'SGD',
     'runtime': [],

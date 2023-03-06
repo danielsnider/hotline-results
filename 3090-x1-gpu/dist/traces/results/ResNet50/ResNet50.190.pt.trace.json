@@ -1,1 +1,1 @@
-[{"ph":"X","cat":"cpu_op","name":"aten::zeros","pid":7,"tid":7,"ts":1678057849890279,"dur":2},{"ph":"X","cat":"cpu_op","name":"aten::empty","pid":7,"tid":7,"ts":1678057849890279,"dur":1}]
+[{"ph":"X","cat":"cpu_op","name":"aten::zero_","pid":7,"tid":7,"ts":1678128449211259,"dur":0}]
