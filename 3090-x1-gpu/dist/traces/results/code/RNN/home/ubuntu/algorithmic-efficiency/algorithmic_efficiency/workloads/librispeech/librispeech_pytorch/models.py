@@ -98,14 +98,17 @@ class BatchRNN(nn.Module):
       with hotline.annotate('BatchNorm'):
         x = self.batch_norm(x)
 
+    # with hotline.annotate('pack_padded_sequence'):
     with hotline.annotate('LSTM'):
       x = x.transpose(0, 1)
       total_length = x.size(1)
       x = nn.utils.rnn.pack_padded_sequence(
           x, output_lengths.cpu(), batch_first=True)
+
+    # with hotline.annotate('LSTM'):
       x, _ = self.rnn(x)
 
-    with hotline.annotate('Sum'):
+    # with hotline.annotate('pad_packed_sequence'):  # Shows up at View/Copy/Slice repeats in backward
       x, _ = nn.utils.rnn.pad_packed_sequence(
           x, batch_first=True, total_length=total_length)
       x = x.transpose(0, 1)
@@ -187,7 +190,7 @@ class CNNLSTM(nn.Module):
     x = x.transpose(1, 2).transpose(0, 1).contiguous()  # TxNxH
 
     for idx, rnn in enumerate(self.rnns):
-      with hotline.annotate(f'BatchRNN-{idx}'):
+      with hotline.annotate(f'Layer{idx}'):
         x = rnn(x, output_lengths)
 
     with hotline.annotate('Linear'):

@@ -202,9 +202,9 @@ def train_once(workload: spec.Workload,
   model_params = torch.nn.DataParallel(model_params)
 
   quick_run = os.environ.get('HOTLINE_QUICK_RUN')
-  if quick_run:
-      wait = 1
-      warmup = 0
+  if False:
+      wait = 2
+      warmup = 2
       active = 1
   else:
       wait = 20
@@ -216,7 +216,7 @@ def train_once(workload: spec.Workload,
   max_steps = wait + warmup + active
 
   metadata = {
-    'model': 'RNN',
+    'model': 'RNN-T',
     'dataset': 'LibriSpeech',
     'batch_size': global_batch_size,
     'optimizer': 'Adam',

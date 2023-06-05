@@ -32,6 +32,7 @@ def get_batch_size(workload_name):
       batch_sizes = {'librispeech': min(8  * num_gpus, default)}
 
   from absl import logging
+  batch_sizes = {'librispeech': 64}
   logging.info(f'\n\nbatch_sizes: {batch_sizes}\n')
 
   return batch_sizes[workload_name]
